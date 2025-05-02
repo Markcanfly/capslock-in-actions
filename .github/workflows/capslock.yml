@@ -1,0 +1,33 @@
+name: Capslock Check
+
+on:
+  push:
+    branches: [ '*' ]
+  pull_request:
+    branches: [ '*' ]
+
+jobs:
+  capslock-check:
+    name: Run Capslock
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.23.x'
+          cache: true
+
+      - name: Install Capslock
+        run: |
+          go install github.com/google/capslock/cmd/capslock@v0.2.7
+        
+      - name: Download dependencies
+        run: |
+          go mod download
+          
+      - name: Run Capslock
+        run: |
+          capslock
