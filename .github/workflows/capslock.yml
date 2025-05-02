@@ -30,4 +30,4 @@ jobs:
           
       - name: Run Capslock
         run: |
-          capslock
+          capslock -output=compare capabilities.json
