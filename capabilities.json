@@ -13,10 +13,32 @@
 					"name": "net/http.Get",
 					"site": {
 						"filename": "main.go",
-						"line": "14",
+						"line": "13",
 						"column": "20"
 					},
 					"package": "net/http"
+				}
+			],
+			"packageDir": "capslock-demo",
+			"capabilityType": "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName": "main",
+			"capability": "CAPABILITY_READ_SYSTEM_STATE",
+			"depPath": "capslock-demo.main os.Getwd",
+			"path": [
+				{
+					"name": "capslock-demo.main",
+					"package": "capslock-demo"
+				},
+				{
+					"name": "os.Getwd",
+					"site": {
+						"filename": "main.go",
+						"line": "19",
+						"column": "20"
+					},
+					"package": "os"
 				}
 			],
 			"packageDir": "capslock-demo",
