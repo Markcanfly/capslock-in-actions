@@ -1,0 +1,31 @@
+{
+	"capabilityInfo": [
+		{
+			"packageName": "main",
+			"capability": "CAPABILITY_NETWORK",
+			"depPath": "capslock-demo.main net/http.Get",
+			"path": [
+				{
+					"name": "capslock-demo.main",
+					"package": "capslock-demo"
+				},
+				{
+					"name": "net/http.Get",
+					"site": {
+						"filename": "main.go",
+						"line": "14",
+						"column": "20"
+					},
+					"package": "net/http"
+				}
+			],
+			"packageDir": "capslock-demo",
+			"capabilityType": "CAPABILITY_TYPE_DIRECT"
+		}
+	],
+	"packageInfo": [
+		{
+			"path": "capslock-demo"
+		}
+	]
+}
