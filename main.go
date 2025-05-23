@@ -4,10 +4,14 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+
+	examplegodependency "github.com/markcanfly/example-go-dependency"
 )
 
 func main() {
 	fmt.Println("Hello, World!")
+
+	fmt.Println(examplegodependency.SpongeBobCase("I am a secure dependency"))
 
 	// CAPABILITY_NETWORK
 	_, err := http.Get("http://example.org")
